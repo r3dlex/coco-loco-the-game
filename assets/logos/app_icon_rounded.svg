@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- macOS/iOS app icon (1024x1024, rounded corners applied by OS) -->
+  <defs>
+    <linearGradient id="aibg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8E7"/>
+      <stop offset="100%" stop-color="#FFE4B5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="224" fill="url(#aibg)"/>
+  <!-- Outer border -->
+  <rect x="40" y="40" width="944" height="944" rx="200" fill="none" stroke="#8B4513" stroke-width="10"/>
+  <rect x="56" y="56" width="912" height="912" rx="192" fill="none" stroke="#8B451333" stroke-width="4" stroke-dasharray="16,8"/>
+  <!-- Loko -->
+  <circle cx="370" cy="470" r="100" fill="#FF6B35" opacity="0.85"/>
+  <circle cx="370" cy="395" r="70" fill="#FFD4A0"/>
+  <circle cx="350" cy="385" r="14" fill="#5C3317"/><circle cx="390" cy="385" r="14" fill="#5C3317"/>
+  <circle cx="352" cy="381" r="5" fill="#FFF"/><circle cx="392" cy="381" r="5" fill="#FFF"/>
+  <path d="M348,410 Q370,432 392,410" fill="none" stroke="#5C3317" stroke-width="5" stroke-linecap="round"/>
+  <!-- Roco -->
+  <circle cx="654" cy="490" r="85" fill="#4ECDC4" opacity="0.85"/>
+  <circle cx="654" cy="425" r="58" fill="#FFD4A0"/>
+  <circle cx="638" cy="418" r="11" fill="#5C3317"/><circle cx="670" cy="418" r="11" fill="#5C3317"/>
+  <circle cx="639" cy="415" r="4" fill="#FFF"/><circle cx="671" cy="415" r="4" fill="#FFF"/>
+  <path d="M638,438 Q654,455 670,438" fill="none" stroke="#5C3317" stroke-width="4" stroke-linecap="round"/>
+  <!-- Star -->
+  <polygon points="512,280 528,324 576,324 538,350 550,394 512,368 474,394 486,350 448,324 496,324" fill="#D4A017"/>
+  <polygon points="512,294 524,324 564,324 532,346 542,382 512,362 482,382 492,346 460,324 500,324" fill="#FFE066"/>
+  <!-- Title -->
+  <text x="512" y="710" text-anchor="middle" font-family="Georgia,Palatino,serif" font-size="100" font-style="italic" fill="#5C3317" letter-spacing="3">Coco Loco</text>
+  <!-- Decorative line -->
+  <line x1="220" y1="740" x2="804" y2="740" stroke="#8B4513" stroke-width="3" opacity="0.4"/>
+  <circle cx="512" cy="740" r="5" fill="#D4A017"/>
+  <!-- Subtitle -->
+  <text x="512" y="810" text-anchor="middle" font-family="Georgia,Palatino,serif" font-size="50" fill="#8B6914" letter-spacing="8" opacity="0.7">The Game</text>
+</svg>

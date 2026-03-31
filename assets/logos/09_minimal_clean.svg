@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#FFFFFF"/>
+  <!-- Clean geometric shapes -->
+  <circle cx="220" cy="180" r="80" fill="none" stroke="#FF6B35" stroke-width="4"/>
+  <circle cx="420" cy="180" r="80" fill="none" stroke="#4ECDC4" stroke-width="4"/>
+  <!-- Overlap area -->
+  <path d="M320,117 A80,80 0 0,1 320,243 A80,80 0 0,1 320,117Z" fill="#FFE066" opacity="0.3"/>
+  <!-- Character dots -->
+  <circle cx="220" cy="170" r="10" fill="#FF6B35"/>
+  <circle cx="420" cy="170" r="10" fill="#4ECDC4"/>
+  <!-- Eyes -->
+  <circle cx="216" cy="167" r="3" fill="#FFFFFF"/>
+  <circle cx="224" cy="167" r="3" fill="#FFFFFF"/>
+  <circle cx="416" cy="167" r="3" fill="#FFFFFF"/>
+  <circle cx="424" cy="167" r="3" fill="#FFFFFF"/>
+  <!-- Mouths (smiles) -->
+  <path d="M213,176 Q220,182 227,176" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+  <path d="M413,176 Q420,182 427,176" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+  <!-- Star in overlap -->
+  <text x="320" y="195" text-anchor="middle" font-size="28" fill="#FFD700">★</text>
+  <!-- Title below -->
+  <text x="320" y="310" text-anchor="middle" font-family="'Helvetica Neue','Segoe UI',sans-serif" font-size="36" font-weight="300" fill="#333333" letter-spacing="12">COCO LOCO</text>
+  <!-- Subtle subtitle -->
+  <text x="320" y="340" text-anchor="middle" font-family="'Helvetica Neue',sans-serif" font-size="14" fill="#999999" letter-spacing="6">THE GAME</text>
+</svg>

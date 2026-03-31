@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="abg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8E7"/>
+      <stop offset="100%" stop-color="#FFE4B5"/>
+    </linearGradient>
+  </defs>
+  <!-- Circular clip for GitHub avatar -->
+  <clipPath id="circ"><circle cx="200" cy="200" r="200"/></clipPath>
+  <g clip-path="url(#circ)">
+    <rect width="400" height="400" fill="url(#abg)"/>
+    <!-- Subtle border ring -->
+    <circle cx="200" cy="200" r="190" fill="none" stroke="#8B4513" stroke-width="5"/>
+    <circle cx="200" cy="200" r="183" fill="none" stroke="#8B451333" stroke-width="2" stroke-dasharray="8,4"/>
+    <!-- Loko (orange, left) -->
+    <circle cx="148" cy="195" r="42" fill="#FF6B35" opacity="0.85"/>
+    <circle cx="148" cy="163" r="30" fill="#FFD4A0"/>
+    <circle cx="138" cy="158" r="6" fill="#5C3317"/>
+    <circle cx="158" cy="158" r="6" fill="#5C3317"/>
+    <circle cx="139" cy="156" r="2" fill="#FFF"/>
+    <circle cx="159" cy="156" r="2" fill="#FFF"/>
+    <path d="M138,173 Q148,184 158,173" fill="none" stroke="#5C3317" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Roco (teal, right) -->
+    <circle cx="252" cy="205" r="35" fill="#4ECDC4" opacity="0.85"/>
+    <circle cx="252" cy="178" r="24" fill="#FFD4A0"/>
+    <circle cx="244" cy="174" r="5" fill="#5C3317"/>
+    <circle cx="260" cy="174" r="5" fill="#5C3317"/>
+    <circle cx="245" cy="172" r="1.8" fill="#FFF"/>
+    <circle cx="261" cy="172" r="1.8" fill="#FFF"/>
+    <path d="M244,187 Q252,196 260,187" fill="none" stroke="#5C3317" stroke-width="2" stroke-linecap="round"/>
+    <!-- Star between them -->
+    <polygon points="200,120 210,148 240,148 216,164 224,192 200,176 176,192 184,164 160,148 190,148" fill="#D4A017"/>
+    <polygon points="200,130 207,148 230,148 212,160 218,182 200,170 182,182 188,160 170,148 193,148" fill="#FFE066"/>
+    <!-- Title -->
+    <text x="200" y="310" text-anchor="middle" font-family="Georgia,Palatino,serif" font-size="42" font-style="italic" fill="#5C3317" letter-spacing="2">Coco Loco</text>
+    <!-- Decorative line -->
+    <line x1="90" y1="325" x2="310" y2="325" stroke="#8B4513" stroke-width="1.5" opacity="0.4"/>
+    <circle cx="200" cy="325" r="3" fill="#D4A017"/>
+    <!-- Subtitle -->
+    <text x="200" y="355" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#8B6914" letter-spacing="5" opacity="0.7">The Game</text>
+  </g>
+</svg>

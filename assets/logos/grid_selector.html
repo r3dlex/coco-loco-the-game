@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Coco Loco — Logo Selector</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #1a1a2e; font-family: 'Helvetica Neue', sans-serif; color: #fff; padding: 20px; }
+  h1 { text-align: center; margin-bottom: 8px; font-size: 28px; color: #FFE066; }
+  p.sub { text-align: center; margin-bottom: 24px; color: #999; font-size: 14px; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  .card {
+    border: 3px solid transparent;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #16213e;
+    position: relative;
+  }
+  .card:hover { border-color: #FFE066; transform: scale(1.03); }
+  .card.selected { border-color: #4ECDC4; box-shadow: 0 0 20px #4ECDC444; }
+  .card svg { width: 100%; display: block; }
+  .card .label {
+    padding: 8px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+  }
+  .card .num { color: #FFE066; font-size: 18px; }
+  .card .name { color: #aaa; }
+  .card .check { display: none; position: absolute; top: 8px; right: 8px; background: #4ECDC4; color: #000; border-radius: 50%; width: 28px; height: 28px; font-size: 18px; line-height: 28px; text-align: center; font-weight: bold; z-index: 2; }
+  .card.selected .check { display: block; }
+  #result { text-align: center; margin-top: 24px; font-size: 18px; color: #4ECDC4; min-height: 30px; }
+</style>
+</head>
+<body>
+<h1>Coco Loco: The Game</h1>
+<p class="sub">Click a logo to select it</p>
+<div class="grid">
+
+<!-- 01 Playful Bubble -->
+<div class="card" onclick="sel(this,'01','Playful Bubble')">
+<div class="check">&#10003;</div>
+<svg viewBox="0 0 640 360">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FF6B35"/><stop offset="100%" stop-color="#F7C948"/></linearGradient>
+    <filter id="s1"><feDropShadow dx="3" dy="4" stdDeviation="3" flood-color="#00000044"/></filter>
+    <filter id="g1"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="640" height="360" rx="30" fill="url(#bg1)"/>
+  <circle cx="80" cy="60" r="25" fill="#FFFFFF22"/><circle cx="560" cy="80" r="35" fill="#FFFFFF22"/>
+  <circle cx="150" cy="300" r="20" fill="#FFFFFF22"/><circle cx="500" cy="290" r="28" fill="#FFFFFF22"/>
+  <circle cx="320" cy="40" r="15" fill="#FFFFFF33"/>
+  <text x="100" y="140" font-size="40" fill="#FFE066" filter="url(#g1)">&#9733;</text>
+  <text x="520" y="160" font-size="35" fill="#FFE066" filter="url(#g1)">&#9733;</text>
+  <text x="320" y="170" text-anchor="middle" font-family="Comic Sans MS,Chalkboard SE,cursive" font-size="82" font-weight="bold" fill="#FFFFFF" stroke="#D4451A" stroke-width="4" filter="url(#s1)">COCO LOCO</text>
+  <text x="320" y="230" text-anchor="middle" font-family="Comic Sans MS,cursive" font-size="32" fill="#FFFFFF" stroke="#D4451A" stroke-width="2" letter-spacing="8" filter="url(#s1)">THE GAME</text>
+  <text x="320" y="310" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="16" fill="#FFF3D0" opacity="0.8">Two Brothers. One Wild Adventure.</text>
+</svg>
+<div class="label"><span class="num">01</span><span class="name">Playful Bubble</span></div>
+</div>
+
+<!-- 02 Retro Arcade -->
+<div class="card" onclick="sel(this,'02','Retro Arcade')">
+<div class="check">&#10003;</div>
+<svg viewBox="0 0 640 360">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#1A0533"/><stop offset="100%" stop-color="#0D001A"/></linearGradient>
+    <filter id="n2"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg2)"/>
+  <g stroke="#FF00FF11" stroke-width="1">
+    <line x1="0" y1="60" x2="640" y2="60"/><line x1="0" y1="120" x2="640" y2="120"/>
+    <line x1="0" y1="180" x2="640" y2="180"/><line x1="0" y1="240" x2="640" y2="240"/>
+    <line x1="0" y1="300" x2="640" y2="300"/>
+    <line x1="80" y1="0" x2="80" y2="360"/><line x1="160" y1="0" x2="160" y2="360"/>
+    <line x1="240" y1="0" x2="240" y2="360"/><line x1="320" y1="0" x2="320" y2="360"/>
+    <line x1="400" y1="0" x2="400" y2="360"/><line x1="480" y1="0" x2="480" y2="360"/>
+    <line x1="560" y1="0" x2="560" y2="360"/>
+  </g>
+  <text x="320" y="155" text-anchor="middle" font-family="Impact,Arial Black,sans-serif" font-size="90" font-weight="bold" fill="#FF00FF" filter="url(#n2)" letter-spacing="6">COCO</text>
+  <text x="320" y="240" text-anchor="middle" font-family="Impact,Arial Black,sans-serif" font-size="90" font-weight="bold" fill="#00FFFF" filter="url(#n2)" letter-spacing="6">LOCO</text>
+  <rect x="200" y="258" width="240" height="32" rx="4" fill="#FF00FF44"/>
+  <text x="320" y="280" text-anchor="middle" font-family="Courier New,monospace" font-size="18" fill="#00FFFF" letter-spacing="12">THE GAME</text>
+</svg>
+<div class="label"><span class="num">02</span><span class="name">Retro Arcade</span></div>
+</div>
+
+<!-- 03 Storybook -->
+<div class="card" onclick="sel(this,'03','Storybook')">
+<div class="check">&#10003;</div>
+<svg viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#FFF8E7"/>
+  <rect x="30" y="20" width="580" height="320" rx="8" fill="none" stroke="#8B4513" stroke-width="4"/>
+  <rect x="38" y="28" width="564" height="304" rx="6" fill="none" stroke="#8B451366" stroke-width="1.5" stroke-dasharray="8,4"/>
+  <text x="320" y="145" text-anchor="middle" font-family="Georgia,Palatino,serif" font-size="72" font-style="italic" fill="#5C3317" letter-spacing="3">Coco Loco</text>
+  <line x1="160" y1="170" x2="480" y2="170" stroke="#8B4513" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="160" cy="170" r="3" fill="#8B4513" opacity="0.5"/><circle cx="480" cy="170" r="3" fill="#8B4513" opacity="0.5"/>
+  <circle cx="320" cy="170" r="4" fill="#D4A017"/>
+  <text x="320" y="210" text-anchor="middle" font-family="Georgia,serif" font-size="28" fill="#8B6914" letter-spacing="6">The Game</text>
+  <circle cx="280" cy="270" r="12" fill="#FF6B35" opacity="0.7"/><circle cx="280" cy="255" r="8" fill="#FFD4A0"/>
+  <circle cx="360" cy="276" r="10" fill="#4ECDC4" opacity="0.7"/><circle cx="360" cy="263" r="7" fill="#FFD4A0"/>
+  <text x="320" y="315" text-anchor="middle" font-family="Georgia,serif" font-size="13" fill="#8B6914" opacity="0.6" font-style="italic">A tale of two brothers</text>
+</svg>
+<div class="label"><span class="num">03</span><span class="name">Storybook</span></div>
+</div>
+
+<!-- 04 Candy Explosion -->
+<div class="card" onclick="sel(this,'04','Candy Explosion')">
+<div class="check">&#10003;</div>
+<svg viewBox="0 0 640 360">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FF69B4"/><stop offset="50%" stop-color="#FF1493"/><stop offset="100%" stop-color="#C71585"/></linearGradient>
+    <filter id="p4"><feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#FFFFFF88"/></filter>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg4)"/>
+  <circle cx="100" cy="80" r="30" fill="#FFE066" opacity="0.6"/><circle cx="540" cy="100" r="25" fill="#7FFFD4" opacity="0.6"/>
+  <circle cx="80" cy="280" r="20" fill="#FF6347" opacity="0.5"/><circle cx="560" cy="260" r="35" fill="#DDA0DD" opacity="0.5"/>
+  <rect x="200" y="50" width="4" height="16" rx="2" fill="#FFFFFF88" transform="rotate(30,202,58)"/>
+  <rect x="420" y="300" width="4" height="16" rx="2" fill="#FFFFFF88" transform="rotate(-45,422,308)"/>
+  <rect x="350" y="40" width="4" height="14" rx="2" fill="#FFFFFF88" transform="rotate(60,352,47)"/>
+  <rect x="130" y="190" width="4" height="14" rx="2" fill="#FFFFFF88" transform="rotate(-20,132,197)"/>
+  <rect x="510" y="180" width="4" height="14" rx="2" fill="#FFFFFF88" transform="rotate(45,512,187)"/>
+  <text x="320" y="160" text-anchor="middle" font-family="Comic Sans MS,cursive" font-size="88" font-weight="bold" fill="#FFFFFF" stroke="#8B0045" stroke-width="5" filter="url(#p4)">COCO</text>
+  <text x="320" y="250" text-anchor="middle" font-family="Comic Sans MS,cursive" font-size="88" font-weight="bold" fill="#FFE066" stroke="#8B0045" stroke-width="5" filter="url(#p4)">LOCO</text>
+  <rect x="230" y="270" width="180" height="30" rx="15" fill="#FFFFFF44"/>
+  <text x="320" y="291" text-anchor="middle" font-family="Comic Sans MS,cursive" font-size="18" fill="#FFFFFF" font-weight="bold" letter-spacing="4">THE GAME</text>
+</svg>
+<div class="label"><span class="num">04</span><span class="name">Candy Explosion</span></div>
+</div>
+
+<!-- 05 Space Phase -->
+<div class="card" onclick="sel(this,'05','Space Phase')">
+<div class="check">&#10003;</div>
+<svg viewBox="0 0 640 360">
+  <defs>
+    <radialGradient id="bg5" cx="50%" cy="50%"><stop offset="0%" stop-color="#1B1464"/><stop offset="100%" stop-color="#070320"/></radialGradient>
+    <filter id="sg5"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg5)"/>
+  <circle cx="50" cy="30" r="1.5" fill="#FFF"/><circle cx="120" cy="80" r="1" fill="#FFF9"/>
+  <circle cx="200" cy="20" r="1.2" fill="#FFF"/><circle cx="400" cy="30" r="1.5" fill="#FFF"/>
+  <circle cx="500" cy="60" r="1" fill="#FFFA"/><circle cx="580" cy="25" r="1.3" fill="#FFF"/>
+  <circle cx="80" cy="320" r="1.5" fill="#FFF"/><circle cx="440" cy="330" r="1" fill="#FFF"/>
+  <circle cx="560" cy="310" r="1.3" fill="#FFFA"/>
+  <circle cx="540" cy="280" r="40" fill="#4A2F7F" opacity="0.5"/>
+  <ellipse cx="540" cy="280" rx="55" ry="12" fill="none" stroke="#9B59B644" stroke-width="3" transform="rotate(-20,540,280)"/>
+  <text x="320" y="155" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="80" font-weight="bold" fill="#E8D5FF" filter="url(#sg5)" letter-spacing="8">COCO</text>
+  <text x="320" y="235" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="80" font-weight="bold" fill="#7FDBFF" filter="url(#sg5)" letter-spacing="8">LOCO</text>
+  <text x="320" y="285" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="22" fill="#9B89B3" letter-spacing="10">THE GAME</text>
+  <line x1="80" y1="100" x2="140" y2="115" stroke="#FFE066" stroke-width="2" opacity="0.7"/>
+  <circle cx="80" cy="100" r="3" fill="#FFE066" filter="url(#sg5)"/>
+</svg>
+<div class="label"><span class="num">05</span><span class="name">Space Phase</span></div>
+</div>
+
+<!-- 06 Dino Jungle -->
+<div class="card" onclick="sel(this,'06','Dino Jungle')">
+<div class="check">&#10003;</div>
+<svg viewBox="0 0 640 360">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#2ECC71"/><stop offset="100%" stop-color="#1A6B37"/></linearGradient>
+    <filter id="j6"><feDropShadow dx="2" dy="3" stdDeviation="2" flood-color="#00000055"/></filter>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg6)"/>
+  <path d="M0,0 Q30,40 0,80 Q40,50 60,80 Q40,30 60,0Z" fill="#1A8B45" opacity="0.6"/>
+  <path d="M640,0 Q610,40 640,80 Q600,50 580,80 Q600,30 580,0Z" fill="#1A8B45" opacity="0.6"/>
+  <path d="M100,0 Q90,60 110,100 Q95,140 105,180" fill="none" stroke="#0D5C2E" stroke-width="3" opacity="0.4"/>
+  <path d="M540,0 Q550,50 530,90 Q545,130 535,170" fill="none" stroke="#0D5C2E" stroke-width="3" opacity="0.4"/>
+  <ellipse cx="480" cy="310" rx="15" ry="20" fill="#15803D" opacity="0.4"/>
+  <circle cx="470" cy="285" r="6" fill="#15803D" opacity="0.4"/><circle cx="490" cy="283" r="6" fill="#15803D" opacity="0.4"/>
+  <text x="320" y="150" text-anchor="middle" font-family="Impact,Arial Black,sans-serif" font-size="88" font-weight="bold" fill="#F7DC6F" stroke="#5D4E0B" stroke-width="4" filter="url(#j6)">COCO</text>
+  <text x="320" y="245" text-anchor="middle" font-family="Impact,Arial Black,sans-serif" font-size="88" font-weight="bold" fill="#FF6B35" stroke="#5D2E0B" stroke-width="4" filter="url(#j6)">LOCO</text>
+  <text x="320" y="295" text-anchor="middle" font-family="Impact,sans-serif" font-size="26" fill="#F7DC6F" letter-spacing="8" filter="url(#j6)">THE GAME</text>
+</svg>
+<div class="label"><span class="num">06</span><span class="name">Dino Jungle</span></div>
+</div>
+
+<!-- 07 Ocean Deep -->
+<div class="card" onclick="sel(this,'07','Ocean Deep')">
+<div class="check">&#10003;</div>
+<svg viewBox="0 0 640 360">
+  <defs>
+    <linearGradient id="bg7" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#0077B6"/><stop offset="50%" stop-color="#005B8E"/><stop offset="100%" stop-color="#003459"/></linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg7)"/>
+  <polygon points="200,0 240,180 160,180" fill="#FFFFFF08"/>
+  <polygon points="350,0 380,160 320,160" fill="#FFFFFF06"/>
+  <polygon points="480,0 510,170 450,170" fill="#FFFFFF07"/>
+  <circle cx="100" cy="250" r="8" fill="none" stroke="#FFFFFF33" stroke-width="1.5"/>
+  <circle cx="110" cy="220" r="5" fill="none" stroke="#FFFFFF33" stroke-width="1"/>
+  <circle cx="530" cy="270" r="10" fill="none" stroke="#FFFFFF33" stroke-width="1.5"/>
+  <circle cx="540" cy="240" r="6" fill="none" stroke="#FFFFFF33" stroke-width="1"/>
+  <path d="M60,360 Q70,310 55,280 Q70,250 60,220" fill="none" stroke="#0D8B5E" stroke-width="4" opacity="0.4"/>
+  <path d="M580,360 Q570,320 585,290 Q570,260 580,230" fill="none" stroke="#0D8B5E" stroke-width="4" opacity="0.4"/>
+  <g transform="translate(490,120)" opacity="0.5"><ellipse rx="12" ry="7" fill="#FF6B35"/><polygon points="-12,-5 -20,0 -12,5" fill="#FF6B35"/><circle cx="6" cy="-2" r="2" fill="#FFF"/></g>
+  <text x="320" y="155" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="78" font-weight="bold" fill="#E0F7FA" stroke="#00334499" stroke-width="3" letter-spacing="5">COCO</text>
+  <text x="320" y="240" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="78" font-weight="bold" fill="#4ECDC4" stroke="#00334499" stroke-width="3" letter-spacing="5">LOCO</text>
+  <text x="320" y="290" text-anchor="middle" font-family="Trebuchet MS,sans-serif" font-size="22" fill="#80DEEA" letter-spacing="8" opacity="0.8">THE GAME</text>
+</svg>
+<div class="label"><span class="num">07</span><span class="name">Ocean Deep</span></div>
+</div>
+
+<!-- 08 Fusion Power -->
+<div class="card" onclick="sel(this,'08','Fusion Power')">
+<div class="check">&#10003;</div>
+<svg viewBox="0 0 640 360">
+  <defs>
+    <radialGradient id="bg8" cx="50%" cy="50%"><stop offset="0%" stop-color="#FFD700"/><stop offset="40%" stop-color="#FF8C00"/><stop offset="100%" stop-color="#8B0000"/></radialGradient>
+    <filter id="sh8"><feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#FFFFFF66"/></filter>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg8)"/>
+  <g opacity="0.3">
+    <line x1="320" y1="180" x2="0" y2="0" stroke="#FFF" stroke-width="2"/>
+    <line x1="320" y1="180" x2="640" y2="0" stroke="#FFF" stroke-width="2"/>
+    <line x1="320" y1="180" x2="0" y2="360" stroke="#FFF" stroke-width="2"/>
+    <line x1="320" y1="180" x2="640" y2="360" stroke="#FFF" stroke-width="2"/>
+    <line x1="320" y1="180" x2="320" y2="0" stroke="#FFF" stroke-width="2"/>
+    <line x1="320" y1="180" x2="0" y2="180" stroke="#FFF" stroke-width="2"/>
+    <line x1="320" y1="180" x2="640" y2="180" stroke="#FFF" stroke-width="2"/>
+    <line x1="320" y1="180" x2="320" y2="360" stroke="#FFF" stroke-width="2"/>
+  </g>
+  <circle cx="320" cy="180" r="120" fill="none" stroke="#FFFFFF44" stroke-width="3"/>
+  <circle cx="320" cy="180" r="140" fill="none" stroke="#FFFFFF22" stroke-width="2"/>
+  <text x="320" y="95" text-anchor="middle" font-size="30" fill="#FFF" filter="url(#sh8)">&#9733; &#9733; &#9733; &#9733; &#9733;</text>
+  <text x="320" y="170" text-anchor="middle" font-family="Impact,Arial Black,sans-serif" font-size="72" font-weight="bold" fill="#FFF" filter="url(#sh8)" letter-spacing="4">COCO LOCO</text>
+  <text x="320" y="220" text-anchor="middle" font-family="Impact,sans-serif" font-size="30" fill="#FFE066" letter-spacing="6">THE GAME</text>
+  <rect x="210" y="250" width="220" height="36" rx="18" fill="#FFFFFF22" stroke="#FFE066" stroke-width="2"/>
+  <text x="320" y="275" text-anchor="middle" font-family="Impact,sans-serif" font-size="18" fill="#FFE066" letter-spacing="3">DOUBLE TROUBLE</text>
+</svg>
+<div class="label"><span class="num">08</span><span class="name">Fusion Power</span></div>
+</div>
+
+<!-- 09 Minimal Clean -->
+<div class="card" onclick="sel(this,'09','Minimal Clean')">
+<div class="check">&#10003;</div>
+<svg viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#FFFFFF"/>
+  <circle cx="220" cy="180" r="80" fill="none" stroke="#FF6B35" stroke-width="4"/>
+  <circle cx="420" cy="180" r="80" fill="none" stroke="#4ECDC4" stroke-width="4"/>
+  <path d="M320,117 A80,80 0 0,1 320,243 A80,80 0 0,1 320,117Z" fill="#FFE066" opacity="0.3"/>
+  <circle cx="220" cy="170" r="10" fill="#FF6B35"/><circle cx="420" cy="170" r="10" fill="#4ECDC4"/>
+  <circle cx="216" cy="167" r="3" fill="#FFF"/><circle cx="224" cy="167" r="3" fill="#FFF"/>
+  <circle cx="416" cy="167" r="3" fill="#FFF"/><circle cx="424" cy="167" r="3" fill="#FFF"/>
+  <path d="M213,176 Q220,182 227,176" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
+  <path d="M413,176 Q420,182 427,176" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
+  <text x="320" y="195" text-anchor="middle" font-size="28" fill="#FFD700">&#9733;</text>
+  <text x="320" y="310" text-anchor="middle" font-family="Helvetica Neue,Segoe UI,sans-serif" font-size="36" font-weight="300" fill="#333" letter-spacing="12">COCO LOCO</text>
+  <text x="320" y="340" text-anchor="middle" font-family="Helvetica Neue,sans-serif" font-size="14" fill="#999" letter-spacing="6">THE GAME</text>
+</svg>
+<div class="label"><span class="num">09</span><span class="name">Minimal Clean</span></div>
+</div>
+
+</div>
+<div id="result"></div>
+<script>
+function sel(el,id,name){
+  document.querySelectorAll('.card').forEach(c=>c.classList.remove('selected'));
+  el.classList.add('selected');
+  document.getElementById('result').textContent='Selected: #'+id+' — '+name;
+}
+</script>
+</body>
+</html>

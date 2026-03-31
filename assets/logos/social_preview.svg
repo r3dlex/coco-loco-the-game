@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640">
+  <!-- GitHub social preview: 1280x640 (2:1) -->
+  <defs>
+    <linearGradient id="spbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8E7"/>
+      <stop offset="100%" stop-color="#FFE4B5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="url(#spbg)"/>
+  <!-- Book border -->
+  <rect x="40" y="30" width="1200" height="580" rx="12" fill="none" stroke="#8B4513" stroke-width="5"/>
+  <rect x="52" y="42" width="1176" height="556" rx="8" fill="none" stroke="#8B451344" stroke-width="2" stroke-dasharray="10,5"/>
+  <!-- Corner flourishes -->
+  <path d="M65,58 Q90,42 115,58 Q100,72 65,58Z" fill="#8B4513" opacity="0.3"/>
+  <path d="M1215,58 Q1190,42 1165,58 Q1180,72 1215,58Z" fill="#8B4513" opacity="0.3"/>
+  <path d="M65,582 Q90,598 115,582 Q100,568 65,582Z" fill="#8B4513" opacity="0.3"/>
+  <path d="M1215,582 Q1190,598 1165,582 Q1180,568 1215,582Z" fill="#8B4513" opacity="0.3"/>
+  <!-- Loko (left of center) -->
+  <circle cx="440" cy="300" r="65" fill="#FF6B35" opacity="0.85"/>
+  <circle cx="440" cy="252" r="45" fill="#FFD4A0"/>
+  <circle cx="425" cy="244" r="9" fill="#5C3317"/><circle cx="455" cy="244" r="9" fill="#5C3317"/>
+  <circle cx="427" cy="241" r="3" fill="#FFF"/><circle cx="457" cy="241" r="3" fill="#FFF"/>
+  <path d="M425,266 Q440,282 455,266" fill="none" stroke="#5C3317" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Roco (right of center) -->
+  <circle cx="840" cy="312" r="55" fill="#4ECDC4" opacity="0.85"/>
+  <circle cx="840" cy="270" r="38" fill="#FFD4A0"/>
+  <circle cx="828" cy="264" r="7.5" fill="#5C3317"/><circle cx="852" cy="264" r="7.5" fill="#5C3317"/>
+  <circle cx="829" cy="261" r="2.5" fill="#FFF"/><circle cx="853" cy="261" r="2.5" fill="#FFF"/>
+  <path d="M828,280 Q840,293 852,280" fill="none" stroke="#5C3317" stroke-width="3" stroke-linecap="round"/>
+  <!-- Star between them -->
+  <polygon points="640,200 655,240 698,240 664,264 676,304 640,280 604,304 616,264 582,240 625,240" fill="#D4A017"/>
+  <polygon points="640,212 651,240 686,240 658,260 668,292 640,274 612,292 622,260 594,240 629,240" fill="#FFE066"/>
+  <!-- Title -->
+  <text x="640" y="460" text-anchor="middle" font-family="Georgia,Palatino,serif" font-size="90" font-style="italic" fill="#5C3317" letter-spacing="4">Coco Loco</text>
+  <!-- Decorative line -->
+  <line x1="320" y1="485" x2="960" y2="485" stroke="#8B4513" stroke-width="2" opacity="0.4"/>
+  <circle cx="320" cy="485" r="4" fill="#8B4513" opacity="0.4"/>
+  <circle cx="960" cy="485" r="4" fill="#8B4513" opacity="0.4"/>
+  <circle cx="640" cy="485" r="5" fill="#D4A017"/>
+  <!-- Subtitle -->
+  <text x="640" y="530" text-anchor="middle" font-family="Georgia,Palatino,serif" font-size="36" fill="#8B6914" letter-spacing="8">The Game</text>
+  <!-- Tagline -->
+  <text x="640" y="575" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#8B6914" opacity="0.5" font-style="italic">A tale of two brothers</text>
+</svg>

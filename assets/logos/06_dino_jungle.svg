@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ECC71"/>
+      <stop offset="100%" style="stop-color:#1A6B37"/>
+    </linearGradient>
+    <filter id="jungle6">
+      <feDropShadow dx="2" dy="3" stdDeviation="2" flood-color="#00000055"/>
+    </filter>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg6)"/>
+  <!-- Jungle leaves silhouettes -->
+  <path d="M0,0 Q30,40 0,80 Q40,50 60,80 Q40,30 60,0Z" fill="#1A8B45" opacity="0.6"/>
+  <path d="M640,0 Q610,40 640,80 Q600,50 580,80 Q600,30 580,0Z" fill="#1A8B45" opacity="0.6"/>
+  <path d="M0,280 Q40,260 60,290 Q30,310 0,300Z" fill="#15803D" opacity="0.5"/>
+  <path d="M640,260 Q600,250 590,280 Q610,300 640,290Z" fill="#15803D" opacity="0.5"/>
+  <!-- Vines -->
+  <path d="M100,0 Q90,60 110,100 Q95,140 105,180" fill="none" stroke="#0D5C2E" stroke-width="3" opacity="0.4"/>
+  <path d="M540,0 Q550,50 530,90 Q545,130 535,170" fill="none" stroke="#0D5C2E" stroke-width="3" opacity="0.4"/>
+  <!-- Dino footprint -->
+  <ellipse cx="480" cy="310" rx="15" ry="20" fill="#15803D" opacity="0.4"/>
+  <circle cx="470" cy="285" r="6" fill="#15803D" opacity="0.4"/>
+  <circle cx="490" cy="283" r="6" fill="#15803D" opacity="0.4"/>
+  <circle cx="480" cy="278" r="5" fill="#15803D" opacity="0.4"/>
+  <!-- Title -->
+  <text x="320" y="150" text-anchor="middle" font-family="'Impact','Arial Black',sans-serif" font-size="88" font-weight="bold" fill="#F7DC6F" stroke="#5D4E0B" stroke-width="4" filter="url(#jungle6)">COCO</text>
+  <text x="320" y="245" text-anchor="middle" font-family="'Impact','Arial Black',sans-serif" font-size="88" font-weight="bold" fill="#FF6B35" stroke="#5D2E0B" stroke-width="4" filter="url(#jungle6)">LOCO</text>
+  <!-- Subtitle -->
+  <text x="320" y="295" text-anchor="middle" font-family="'Impact',sans-serif" font-size="26" fill="#F7DC6F" letter-spacing="8" filter="url(#jungle6)">THE GAME</text>
+</svg>

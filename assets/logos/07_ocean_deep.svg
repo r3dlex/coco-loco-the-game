@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <defs>
+    <linearGradient id="bg7" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0077B6"/>
+      <stop offset="50%" style="stop-color:#005B8E"/>
+      <stop offset="100%" style="stop-color:#003459"/>
+    </linearGradient>
+    <filter id="underwater7">
+      <feGaussianBlur stdDeviation="1.5"/>
+    </filter>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg7)"/>
+  <!-- Light rays from surface -->
+  <polygon points="200,0 240,180 160,180" fill="#FFFFFF08"/>
+  <polygon points="350,0 380,160 320,160" fill="#FFFFFF06"/>
+  <polygon points="480,0 510,170 450,170" fill="#FFFFFF07"/>
+  <!-- Bubbles -->
+  <circle cx="100" cy="250" r="8" fill="none" stroke="#FFFFFF33" stroke-width="1.5"/>
+  <circle cx="110" cy="220" r="5" fill="none" stroke="#FFFFFF33" stroke-width="1"/>
+  <circle cx="95" cy="200" r="3" fill="none" stroke="#FFFFFF22" stroke-width="1"/>
+  <circle cx="530" cy="270" r="10" fill="none" stroke="#FFFFFF33" stroke-width="1.5"/>
+  <circle cx="540" cy="240" r="6" fill="none" stroke="#FFFFFF33" stroke-width="1"/>
+  <circle cx="525" cy="215" r="4" fill="none" stroke="#FFFFFF22" stroke-width="1"/>
+  <!-- Seaweed -->
+  <path d="M60,360 Q70,310 55,280 Q70,250 60,220" fill="none" stroke="#0D8B5E" stroke-width="4" opacity="0.4"/>
+  <path d="M580,360 Q570,320 585,290 Q570,260 580,230" fill="none" stroke="#0D8B5E" stroke-width="4" opacity="0.4"/>
+  <!-- Small fish -->
+  <g transform="translate(490,120)" opacity="0.5">
+    <ellipse rx="12" ry="7" fill="#FF6B35"/>
+    <polygon points="-12,-5 -20,0 -12,5" fill="#FF6B35"/>
+    <circle cx="6" cy="-2" r="2" fill="#FFFFFF"/>
+  </g>
+  <!-- Title -->
+  <text x="320" y="155" text-anchor="middle" font-family="'Trebuchet MS','Arial',sans-serif" font-size="78" font-weight="bold" fill="#E0F7FA" stroke="#00334499" stroke-width="3" letter-spacing="5">COCO</text>
+  <text x="320" y="240" text-anchor="middle" font-family="'Trebuchet MS','Arial',sans-serif" font-size="78" font-weight="bold" fill="#4ECDC4" stroke="#00334499" stroke-width="3" letter-spacing="5">LOCO</text>
+  <!-- Subtitle -->
+  <text x="320" y="290" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="22" fill="#80DEEA" letter-spacing="8" opacity="0.8">THE GAME</text>
+</svg>

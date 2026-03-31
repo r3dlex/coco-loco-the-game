@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="ibg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8E7"/>
+      <stop offset="100%" stop-color="#FFE4B5"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="64" fill="url(#ibg)"/>
+  <!-- Book border -->
+  <rect x="24" y="24" width="464" height="464" rx="48" fill="none" stroke="#8B4513" stroke-width="8"/>
+  <rect x="36" y="36" width="440" height="440" rx="40" fill="none" stroke="#8B451344" stroke-width="3" stroke-dasharray="12,6"/>
+  <!-- Loko (orange, left) -->
+  <circle cx="190" cy="260" r="52" fill="#FF6B35" opacity="0.85"/>
+  <circle cx="190" cy="222" r="36" fill="#FFD4A0"/>
+  <!-- Loko eyes -->
+  <circle cx="178" cy="216" r="7" fill="#5C3317"/>
+  <circle cx="202" cy="216" r="7" fill="#5C3317"/>
+  <circle cx="180" cy="214" r="2.5" fill="#FFFFFF"/>
+  <circle cx="204" cy="214" r="2.5" fill="#FFFFFF"/>
+  <!-- Loko smile -->
+  <path d="M178,232 Q190,244 202,232" fill="none" stroke="#5C3317" stroke-width="3" stroke-linecap="round"/>
+  <!-- Roco (teal, right) -->
+  <circle cx="322" cy="270" r="44" fill="#4ECDC4" opacity="0.85"/>
+  <circle cx="322" cy="238" r="30" fill="#FFD4A0"/>
+  <!-- Roco eyes -->
+  <circle cx="312" cy="233" r="6" fill="#5C3317"/>
+  <circle cx="332" cy="233" r="6" fill="#5C3317"/>
+  <circle cx="313" cy="231" r="2" fill="#FFFFFF"/>
+  <circle cx="333" cy="231" r="2" fill="#FFFFFF"/>
+  <!-- Roco smile -->
+  <path d="M312,247 Q322,257 332,247" fill="none" stroke="#5C3317" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Star between them -->
+  <polygon points="256,180 264,204 290,204 270,218 278,242 256,228 234,242 242,218 222,204 248,204" fill="#D4A017"/>
+  <polygon points="256,188 262,204 280,204 266,214 272,232 256,222 240,232 246,214 232,204 250,204" fill="#FFE066"/>
+  <!-- Title -->
+  <text x="256" y="400" text-anchor="middle" font-family="Georgia,Palatino,serif" font-size="60" font-style="italic" fill="#5C3317" letter-spacing="2">Coco Loco</text>
+  <!-- Decorative line -->
+  <line x1="120" y1="420" x2="392" y2="420" stroke="#8B4513" stroke-width="2" opacity="0.4"/>
+  <circle cx="120" cy="420" r="3" fill="#8B4513" opacity="0.4"/>
+  <circle cx="392" cy="420" r="3" fill="#8B4513" opacity="0.4"/>
+  <circle cx="256" cy="420" r="4" fill="#D4A017"/>
+</svg>

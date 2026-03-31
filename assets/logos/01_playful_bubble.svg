@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B35"/>
+      <stop offset="100%" style="stop-color:#F7C948"/>
+    </linearGradient>
+    <linearGradient id="text1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#FFF3D0"/>
+    </linearGradient>
+    <filter id="shadow1">
+      <feDropShadow dx="3" dy="4" stdDeviation="3" flood-color="#00000044"/>
+    </filter>
+    <filter id="glow1">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="640" height="360" rx="30" fill="url(#bg1)"/>
+  <!-- Decorative bubbles -->
+  <circle cx="80" cy="60" r="25" fill="#FFFFFF22"/>
+  <circle cx="560" cy="80" r="35" fill="#FFFFFF22"/>
+  <circle cx="150" cy="300" r="20" fill="#FFFFFF22"/>
+  <circle cx="500" cy="290" r="28" fill="#FFFFFF22"/>
+  <circle cx="320" cy="40" r="15" fill="#FFFFFF33"/>
+  <circle cx="50" cy="200" r="12" fill="#FFFFFF22"/>
+  <circle cx="600" cy="220" r="18" fill="#FFFFFF22"/>
+  <!-- Stars -->
+  <text x="100" y="140" font-size="40" fill="#FFE066" filter="url(#glow1)">★</text>
+  <text x="520" y="160" font-size="35" fill="#FFE066" filter="url(#glow1)">★</text>
+  <text x="280" y="80" font-size="25" fill="#FFE066" filter="url(#glow1)">★</text>
+  <!-- Main title -->
+  <text x="320" y="170" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE',cursive" font-size="82" font-weight="bold" fill="url(#text1)" stroke="#D4451A" stroke-width="4" filter="url(#shadow1)">COCO LOCO</text>
+  <!-- Subtitle -->
+  <text x="320" y="230" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE',cursive" font-size="32" fill="#FFFFFF" stroke="#D4451A" stroke-width="2" letter-spacing="8" filter="url(#shadow1)">THE GAME</text>
+  <!-- Small tagline -->
+  <text x="320" y="310" text-anchor="middle" font-family="'Trebuchet MS',sans-serif" font-size="16" fill="#FFF3D0" opacity="0.8">Two Brothers. One Wild Adventure.</text>
+</svg>

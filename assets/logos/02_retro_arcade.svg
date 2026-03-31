@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A0533"/>
+      <stop offset="100%" style="stop-color:#0D001A"/>
+    </linearGradient>
+    <filter id="neon2">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg2)"/>
+  <!-- Grid lines (retro) -->
+  <g stroke="#FF00FF11" stroke-width="1">
+    <line x1="0" y1="60" x2="640" y2="60"/><line x1="0" y1="120" x2="640" y2="120"/>
+    <line x1="0" y1="180" x2="640" y2="180"/><line x1="0" y1="240" x2="640" y2="240"/>
+    <line x1="0" y1="300" x2="640" y2="300"/>
+    <line x1="80" y1="0" x2="80" y2="360"/><line x1="160" y1="0" x2="160" y2="360"/>
+    <line x1="240" y1="0" x2="240" y2="360"/><line x1="320" y1="0" x2="320" y2="360"/>
+    <line x1="400" y1="0" x2="400" y2="360"/><line x1="480" y1="0" x2="480" y2="360"/>
+    <line x1="560" y1="0" x2="560" y2="360"/>
+  </g>
+  <!-- Neon title -->
+  <text x="320" y="155" text-anchor="middle" font-family="'Impact','Arial Black',sans-serif" font-size="90" font-weight="bold" fill="#FF00FF" filter="url(#neon2)" letter-spacing="6">COCO</text>
+  <text x="320" y="240" text-anchor="middle" font-family="'Impact','Arial Black',sans-serif" font-size="90" font-weight="bold" fill="#00FFFF" filter="url(#neon2)" letter-spacing="6">LOCO</text>
+  <!-- Subtitle bar -->
+  <rect x="200" y="258" width="240" height="32" rx="4" fill="#FF00FF44"/>
+  <text x="320" y="280" text-anchor="middle" font-family="'Courier New',monospace" font-size="18" fill="#00FFFF" letter-spacing="12">THE GAME</text>
+  <!-- Pixel stars -->
+  <rect x="90" y="80" width="8" height="8" fill="#FFE066"/>
+  <rect x="530" y="100" width="8" height="8" fill="#FFE066"/>
+  <rect x="180" y="300" width="6" height="6" fill="#FF00FF"/>
+  <rect x="450" y="310" width="6" height="6" fill="#00FFFF"/>
+</svg>

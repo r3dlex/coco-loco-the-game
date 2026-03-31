@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 215">
+  <!-- Steam small capsule: 460x215 -->
+  <defs>
+    <linearGradient id="scbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8E7"/>
+      <stop offset="100%" stop-color="#FFE4B5"/>
+    </linearGradient>
+  </defs>
+  <rect width="460" height="215" fill="url(#scbg)"/>
+  <!-- Border -->
+  <rect x="8" y="8" width="444" height="199" rx="6" fill="none" stroke="#8B4513" stroke-width="3"/>
+  <!-- Characters on left -->
+  <circle cx="90" cy="108" r="30" fill="#FF6B35" opacity="0.85"/>
+  <circle cx="90" cy="84" r="21" fill="#FFD4A0"/>
+  <circle cx="84" cy="80" r="4" fill="#5C3317"/><circle cx="96" cy="80" r="4" fill="#5C3317"/>
+  <circle cx="84.5" cy="79" r="1.5" fill="#FFF"/><circle cx="96.5" cy="79" r="1.5" fill="#FFF"/>
+  <path d="M84,90 Q90,97 96,90" fill="none" stroke="#5C3317" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="150" cy="116" r="25" fill="#4ECDC4" opacity="0.85"/>
+  <circle cx="150" cy="96" r="17" fill="#FFD4A0"/>
+  <circle cx="145" cy="93" r="3.5" fill="#5C3317"/><circle cx="155" cy="93" r="3.5" fill="#5C3317"/>
+  <circle cx="145.5" cy="92" r="1.2" fill="#FFF"/><circle cx="155.5" cy="92" r="1.2" fill="#FFF"/>
+  <path d="M145,101 Q150,107 155,101" fill="none" stroke="#5C3317" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Star between -->
+  <polygon points="120,52 125,67 140,67 128,76 132,90 120,82 108,90 112,76 100,67 115,67" fill="#D4A017"/>
+  <!-- Title on right -->
+  <text x="310" y="95" text-anchor="middle" font-family="Georgia,Palatino,serif" font-size="48" font-style="italic" fill="#5C3317" letter-spacing="2">Coco Loco</text>
+  <line x1="220" y1="110" x2="400" y2="110" stroke="#8B4513" stroke-width="1" opacity="0.4"/>
+  <circle cx="310" cy="110" r="3" fill="#D4A017"/>
+  <text x="310" y="135" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#8B6914" letter-spacing="4" opacity="0.7">The Game</text>
+  <!-- Bottom tagline -->
+  <text x="310" y="185" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#8B6914" opacity="0.4" font-style="italic">Two Brothers. One Wild Adventure.</text>
+</svg>
