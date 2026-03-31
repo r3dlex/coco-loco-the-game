@@ -1,0 +1,7 @@
+ID: fusion_reference
+Size: 512x512 → upscaled to 1024x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. Character reference for Double Trouble, a glowing fused superhero form. Combination of a 6-year-old (orange) and 3-year-old (teal) merged into one. Gold and white radiant glow. Swirling orange and teal energy. Enlarged star emblem on chest, shining brightly. Sparkle particle trail. Taller and more powerful looking. Show front view and action pose. Parchment background with golden light radiating outward.

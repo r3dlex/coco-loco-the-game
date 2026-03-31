@@ -1,0 +1,7 @@
+ID: loko_sprites
+Size: 768x512 → upscaled to 1792x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. Sprite sheet of Loko, a 6-year-old boy superhero in orange cape. 8 evenly spaced frames in a horizontal row: 1) standing idle, 2) running frame 1, 3) running frame 2, 4) jumping up, 5) falling down, 6) punching forward, 7) funny knockback (silly face, stars around head), 8) celebrating arms up. Side view facing right. Peach skin, orange cape, star on chest. Parchment background.

@@ -1,0 +1,7 @@
+ID: boss_vacuum_attacks
+Size: 768x512 → upscaled to 1792x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. Sprite sheet of a giant vacuum cleaner boss attacking in a side-scroller. 6 frames: 1) idle hover, 2) suck attack with visible wind lines pulling inward, 3) charge across screen with spinning wheels, 4) slam down creating shockwave, 5) stunned/resting with dizzy spirals and sitting down, 6) phase 2 transition glowing red with steam. Children's storybook style. Parchment background.

@@ -1,0 +1,7 @@
+ID: banner_team_up
+Size: 768x512 → upscaled to 1792x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. An exciting game banner for a 'Team Up' co-op moment. Two kid superhero silhouettes (orange and teal) standing together powerfully. Lightning bolt and star effects between them. Musical notes suggesting a fanfare. Orange and teal energy combining. Warm parchment background. No text. Landscape banner shape. Golden storybook border.

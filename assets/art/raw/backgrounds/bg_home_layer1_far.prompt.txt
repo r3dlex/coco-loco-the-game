@@ -1,0 +1,7 @@
+ID: bg_home_layer1_far
+Size: 768x512 → upscaled to 1792x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. Seamless horizontal parallax background layer for a children's game. Far distance: cozy house exterior seen through a window. Warm afternoon sky with soft puffy clouds. Garden with oversized whimsical flowers. Very soft and slightly blurry. Warm cream and amber tones. Upper-left warm lighting. Dreamy watercolor feel. Must tile seamlessly left-to-right. Landscape 16:9.

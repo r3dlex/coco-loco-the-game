@@ -1,0 +1,7 @@
+ID: fusion_activate
+Size: 768x512 → upscaled to 1792x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. Sprite sequence of two kid superheroes merging into one glowing form. 6 frames: 1) orange boy and teal toddler running toward each other, 2) collision with golden star burst, 3) swirling orange+teal energy vortex, 4) silhouette forming inside light, 5) bright flash, 6) fused golden hero standing triumphantly. Lots of sparkles, stars, and golden light. Parchment background.

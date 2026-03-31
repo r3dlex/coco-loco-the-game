@@ -1,0 +1,7 @@
+ID: loko_reference
+Size: 512x512 → upscaled to 1024x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. Character reference sheet for Loko, a 6-year-old boy superhero. Orange color scheme (#FF6B35). Messy spiky brown hair. Big confident grin. Wears an orange cape, star emblem on chest, oversized red sneakers. Peach skin (#FFD4A0). Stocky and energetic build. Show: front view, side view, back view, 3/4 action pose. Clean parchment background. Thick warm-brown outlines.

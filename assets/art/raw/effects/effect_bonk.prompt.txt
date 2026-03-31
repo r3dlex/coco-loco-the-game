@@ -1,0 +1,7 @@
+ID: effect_bonk
+Size: 512x512 → upscaled to 1024x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. Sprite sheet of a comic 'bonk' hit effect for a children's game. 4 frames: 1) impact flash with cartoon stars, 2) expanding ring of tiny stars and birds circling, 3) stars scattering outward, 4) fading away. Bright warm colors: gold stars, orange flash, brown outlines. Funny and silly, not violent. Parchment background.

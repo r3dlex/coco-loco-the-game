@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """
-DALL-E art generation script for Coco Loco.
+Art generation script for Coco Loco.
+
+Supports two backends:
+  --backend dalle   (default) Uses OpenAI DALL-E 3 API (requires OPENAI_API_KEY)
+  --backend flux    Uses Flux.1-schnell locally via Apple MPS / CUDA
 
 Art direction derived from the Storybook logo (#03):
 - Parchment/cream backgrounds (#FFF8E7 → #FFE4B5)
@@ -27,23 +31,15 @@ if env_path.exists():
         line = line.strip()
         if line and not line.startswith("#") and "=" in line:
             key, _, val = line.partition("=")
-            val = val.strip().strip("'\"")  # strip quotes
+            val = val.strip().strip("'\"")
             os.environ[key.strip()] = val
-
-from openai import OpenAI
-
-# Support both OPENAI_KEY and OPENAI_API_KEY
-api_key = os.environ.get("OPENAI_API_KEY") or os.environ.get("OPENAI_KEY")
-if not api_key:
-    print("ERROR: Set OPENAI_API_KEY or OPENAI_KEY in .env")
-    sys.exit(1)
-client = OpenAI(api_key=api_key)
 
 OUTPUT_DIR = REPO_ROOT / "assets" / "art" / "raw"
 
-# ── Style anchor (derived from Storybook logo) ────────────────────────────────
+# ── Style anchors (derived from Storybook logo) ───────────────────────────────
 
-ANCHOR = (
+# Full anchor for DALL-E (handles long prompts well)
+ANCHOR_DALLE = (
     "Children's storybook illustration on a warm parchment-cream background "
     "(#FFF8E7 to #FFE4B5 gradient). Warm upper-left lighting. Soft watercolor "
     "brush strokes. Thick warm-brown outlines (#5C3317) around characters. "
@@ -52,6 +48,12 @@ ANCHOR = (
     "dark brown (#5C3317), gold (#D4A017), cream (#FFF8E7). "
     "Style of a hand-illustrated children's picture book page. "
     "No text anywhere in the image."
+)
+
+# Short anchor for local models (CLIP has 77-token limit)
+ANCHOR_LOCAL = (
+    "Children's storybook watercolor illustration, warm parchment background, "
+    "thick brown outlines, gold star accents, no text."
 )
 
 # ── Prompt definitions ─────────────────────────────────────────────────────────
@@ -362,11 +364,22 @@ PROMPTS = [
 ]
 
 
-def generate_one(entry: dict) -> str:
-    """Generate a single image and save it. Returns the output path."""
+# ── Backend: DALL-E 3 ──────────────────────────────────────────────────────────
+
+def _init_dalle():
+    from openai import OpenAI
+
+    api_key = os.environ.get("OPENAI_API_KEY") or os.environ.get("OPENAI_KEY")
+    if not api_key:
+        print("ERROR: Set OPENAI_API_KEY or OPENAI_KEY in .env")
+        sys.exit(1)
+    return OpenAI(api_key=api_key)
+
+
+def generate_dalle(entry: dict, client) -> str:
     category = entry["category"]
     art_id = entry["id"]
-    prompt = f"{ANCHOR} {entry['prompt']}"
+    prompt = f"{ANCHOR_DALLE} {entry['prompt']}"
     size = entry.get("size", "1024x1024")
 
     out_dir = OUTPUT_DIR / category
@@ -393,25 +406,163 @@ def generate_one(entry: dict) -> str:
     urllib.request.urlretrieve(url, str(out_path))
 
     prompt_path.write_text(
-        f"ID: {art_id}\nSize: {size}\n\n"
+        f"ID: {art_id}\nSize: {size}\nBackend: dalle\n\n"
         f"Original prompt:\n{prompt}\n\n"
         f"Revised prompt (DALL-E):\n{revised}\n"
     )
 
-    print(f"OK → {out_path.relative_to(OUTPUT_DIR.parent.parent)}")
+    print(f"OK → {out_path.relative_to(REPO_ROOT)}")
     return str(out_path)
 
 
+# ── Backend: Local (SDXL Turbo — ungated, ~6.9 GB, fast) ──────────────────────
+
+_local_pipe = None
+_local_device = None
+
+
+def _init_local():
+    """Load SDXL Turbo pipeline once, reuse across generations."""
+    global _local_pipe, _local_device
+    if _local_pipe is not None:
+        return _local_pipe
+
+    print("Loading SDXL Turbo model (first run downloads ~6.9 GB)...")
+
+    import torch
+
+    # Determine device
+    if torch.backends.mps.is_available():
+        _local_device = "mps"
+        dtype = torch.float16
+        print(f"  Device: Apple MPS (Metal)")
+    elif torch.cuda.is_available():
+        _local_device = "cuda"
+        dtype = torch.float16
+        print(f"  Device: CUDA ({torch.cuda.get_device_name()})")
+    else:
+        _local_device = "cpu"
+        dtype = torch.float32
+        print(f"  Device: CPU (slow!)")
+
+    from diffusers import AutoPipelineForText2Image
+
+    _local_pipe = AutoPipelineForText2Image.from_pretrained(
+        "stabilityai/sdxl-turbo",
+        torch_dtype=dtype,
+        variant="fp16" if dtype == torch.float16 else None,
+    )
+    _local_pipe.to(_local_device)
+
+    print(f"  Pipeline loaded on {_local_device}")
+    return _local_pipe
+
+
+def _parse_size(size_str: str) -> tuple[int, int]:
+    """Convert '1024x1024' to (width, height). SDXL Turbo works best at 512x512."""
+    w, h = size_str.split("x")
+    w, h = int(w), int(h)
+    # SDXL Turbo produces best quality at 512x512.
+    # For wide formats, use 768x512. Always multiples of 8.
+    if w > h:
+        return 768, 512
+    return 512, 512
+
+
+def generate_local(entry: dict, pipe) -> str:
+    category = entry["category"]
+    art_id = entry["id"]
+    prompt = f"{ANCHOR_LOCAL} {entry['prompt']}"
+    size_str = entry.get("size", "1024x1024")
+    width, height = _parse_size(size_str)
+
+    out_dir = OUTPUT_DIR / category
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out_path = out_dir / f"{art_id}.png"
+    prompt_path = out_dir / f"{art_id}.prompt.txt"
+
+    if out_path.exists():
+        print(f"  SKIP {art_id} (already exists)")
+        return str(out_path)
+
+    print(f"  Generating {art_id} ({width}x{height})...", end=" ", flush=True)
+
+    image = pipe(
+        prompt=prompt,
+        guidance_scale=0.0,  # Turbo doesn't use guidance
+        height=height,
+        width=width,
+        num_inference_steps=4,
+    ).images[0]
+
+    # Upscale to requested size for game use
+    orig_w, orig_h = size_str.split("x")
+    target_w, target_h = int(orig_w), int(orig_h)
+    if (target_w, target_h) != (width, height):
+        from PIL import Image
+        image = image.resize((target_w, target_h), Image.LANCZOS)
+
+    image.save(str(out_path))
+
+    prompt_path.write_text(
+        f"ID: {art_id}\nSize: {width}x{height} → upscaled to {target_w}x{target_h}\n"
+        f"Backend: sdxl-turbo\nSteps: 4\n\n"
+        f"Prompt:\n{prompt}\n"
+    )
+
+    print(f"OK → {out_path.relative_to(REPO_ROOT)}")
+    return str(out_path)
+
+
+# ── Main ───────────────────────────────────────────────────────────────────────
+
 def main():
-    print(f"Coco Loco Art Generator — {len(PROMPTS)} assets")
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Coco Loco art generator")
+    parser.add_argument(
+        "--backend", choices=["dalle", "local"], default="local",
+        help="Generation backend: 'dalle' (OpenAI API, paid) or 'local' (SDXL Turbo, free). Default: local"
+    )
+    parser.add_argument(
+        "--only", type=str, default=None,
+        help="Generate only a specific asset by ID (e.g., --only loko_reference)"
+    )
+    parser.add_argument(
+        "--category", type=str, default=None,
+        help="Generate only assets in a category (characters, enemies, backgrounds, etc.)"
+    )
+    args = parser.parse_args()
+
+    prompts = PROMPTS
+    if args.only:
+        prompts = [p for p in prompts if p["id"] == args.only]
+        if not prompts:
+            print(f"ERROR: No asset with id '{args.only}'")
+            sys.exit(1)
+    elif args.category:
+        prompts = [p for p in prompts if p["category"] == args.category]
+        if not prompts:
+            print(f"ERROR: No assets in category '{args.category}'")
+            sys.exit(1)
+
+    print(f"Coco Loco Art Generator — {len(prompts)} assets ({args.backend} backend)")
     print(f"Output: {OUTPUT_DIR}\n")
+
+    # Init backend
+    if args.backend == "dalle":
+        backend_ctx = _init_dalle()
+        gen_fn = generate_dalle
+    else:
+        backend_ctx = _init_local()
+        gen_fn = generate_local
 
     results = {"generated": [], "skipped": [], "failed": []}
 
-    for i, entry in enumerate(PROMPTS, 1):
-        print(f"[{i}/{len(PROMPTS)}] {entry['id']}")
+    for i, entry in enumerate(prompts, 1):
+        print(f"[{i}/{len(prompts)}] {entry['id']}")
         try:
-            path = generate_one(entry)
+            path = gen_fn(entry, backend_ctx)
             if "SKIP" not in path:
                 results["generated"].append(entry["id"])
             else:
@@ -420,8 +571,8 @@ def main():
             print(f"  FAILED: {e}")
             results["failed"].append({"id": entry["id"], "error": str(e)})
 
-        # Rate limiting: DALL-E 3 allows ~7 images/min on Tier 1
-        if i < len(PROMPTS):
+        # Rate limiting for DALL-E only
+        if args.backend == "dalle" and i < len(prompts):
             time.sleep(10)
 
     # Summary
@@ -437,6 +588,7 @@ def main():
 
     # Save manifest
     manifest_path = OUTPUT_DIR / "manifest.json"
+    manifest_path.parent.mkdir(parents=True, exist_ok=True)
     manifest_path.write_text(json.dumps(results, indent=2))
     print(f"\nManifest: {manifest_path}")
 

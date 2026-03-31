@@ -1,0 +1,7 @@
+ID: bg_home_layer4_foreground
+Size: 768x512 → upscaled to 1792x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. Foreground elements for a children's side-scroller game set in a living room. Scattered on the floor: colorful building blocks, a toy fire truck, crayons, a teddy bear, a ball. These serve as platforms and obstacles. Each item clearly separated with space between them. Sharp thick brown outlines. Warm parchment background. Items should be usable as game platforms. Landscape 16:9.

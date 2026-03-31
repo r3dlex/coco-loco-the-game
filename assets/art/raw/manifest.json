@@ -1,0 +1,29 @@
+{
+  "generated": [
+    "loko_reference",
+    "loko_sprites",
+    "loko_dash",
+    "roco_reference",
+    "roco_sprites",
+    "roco_cry",
+    "roco_hammer",
+    "fusion_reference",
+    "fusion_activate",
+    "fusion_deactivate",
+    "dust_bunny",
+    "boss_vacuum",
+    "boss_vacuum_attacks",
+    "bg_home_layer1_far",
+    "bg_home_layer2_mid",
+    "bg_home_layer3_near",
+    "bg_home_layer4_foreground",
+    "star_pickup",
+    "effect_bonk",
+    "effect_poof",
+    "banner_player2",
+    "banner_team_up",
+    "banner_double_trouble"
+  ],
+  "skipped": [],
+  "failed": []
+}

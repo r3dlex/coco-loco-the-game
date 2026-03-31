@@ -1,0 +1,7 @@
+ID: roco_hammer
+Size: 768x512 → upscaled to 1792x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. Sprite sheet of Roco, 3-year-old toddler, doing a ground pound with a tiny hammer. 4 frames: 1) jumping up high, 2) raising tiny hammer overhead, 3) slamming down with gold impact stars, 4) shockwave ring expanding. Side view. Parchment background. Thick brown outlines.

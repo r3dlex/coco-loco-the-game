@@ -1,0 +1,7 @@
+ID: effect_poof
+Size: 512x512 → upscaled to 1024x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. Sprite sheet of a cute 'poof' cloud for enemy defeat in a children's game. 4 frames: 1) small initial puff, 2) expanding soft cloud with golden sparkles, 3) cloud starting to dissipate with lingering sparkles, 4) almost gone, just sparkles. Soft warm gray cloud with gold (#D4A017) sparkle accents. Parchment background. Gentle and satisfying.

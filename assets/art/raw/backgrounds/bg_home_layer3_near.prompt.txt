@@ -1,0 +1,7 @@
+ID: bg_home_layer3_near
+Size: 768x512 → upscaled to 1792x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. Seamless horizontal parallax background for a children's game. Near distance: giant furniture from a child's tiny perspective. Enormous sofa legs, massive wooden table leg, huge floor lamp. Everything towers overhead like a forest of furniture. Warm brown wood tones on parchment cream. Sharper details than far layers. Upper-left lighting. Must tile seamlessly. Landscape 16:9.

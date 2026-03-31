@@ -1,0 +1,7 @@
+ID: boss_vacuum
+Size: 512x512 → upscaled to 1024x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. Character sheet of a giant sentient vacuum cleaner boss for a children's game. Big googly eyes on the front. Flexible hose acts like an elephant trunk arm. Wheels for feet. Has a goofy expression. 4 views: 1) angry sucking pose, 2) dizzy resting (spiral eyes, sitting down), 3) charging across room (wheels spinning fast), 4) phase 2 (red glow, angrier). Imposing but silly and not scary. Parchment background. Thick brown outlines.

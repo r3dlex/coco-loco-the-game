@@ -1,0 +1,7 @@
+ID: loko_dash
+Size: 768x512 → upscaled to 1792x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. Sprite sheet of Loko, 6-year-old boy superhero, performing a super-speed dash. 4 frames: 1) crouch wind-up, 2) horizontal blur with orange speed lines, 3) mid-dash with afterimage trail, 4) skid stop with dust cloud. Orange speed lines trailing behind. Side view facing right. Parchment background. Thick brown outlines.

@@ -1,0 +1,7 @@
+ID: star_pickup
+Size: 512x512 → upscaled to 1024x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. Sprite sheet of a golden star collectible for a children's game. A cute 5-pointed star with a tiny happy face (dot eyes, small smile). Glowing golden (#D4A017 and #FFE066). 4 frames: 1) idle gentle glow, 2) rotating 30 degrees, 3) rotating 60 degrees, 4) rotating 90 degrees with sparkle. Each frame 64x64. Parchment background. Thick brown outlines on star.

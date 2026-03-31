@@ -1,0 +1,7 @@
+ID: roco_cry
+Size: 768x512 → upscaled to 1792x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. Sprite sheet of Roco, 3-year-old toddler superhero, performing a sonic cry. 4 frames: 1) inhale with puffed cheeks, 2) mouth wide open with teal sonic rings, 3) sustained cry pushing enemies back, 4) tired exhale. Teal (#4ECDC4) sonic wave rings visible emanating forward. Side view facing right. Parchment background.

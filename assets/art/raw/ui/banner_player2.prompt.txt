@@ -1,0 +1,7 @@
+ID: banner_player2
+Size: 768x512 → upscaled to 1792x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. A festive game banner for 'Player 2 joined' moment. Shows two cute kid superhero silhouettes (one orange, one teal) high-fiving. Confetti and tiny stars bursting around them. Warm golden light. Celebratory and exciting. No text in the image. Landscape banner shape (4:1 ratio). Parchment background with golden border.

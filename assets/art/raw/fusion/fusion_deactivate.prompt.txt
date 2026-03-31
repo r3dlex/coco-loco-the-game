@@ -1,0 +1,7 @@
+ID: fusion_deactivate
+Size: 768x512 → upscaled to 1792x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. Sprite sequence of a glowing fused superhero popping apart into two kids. 4 frames: 1) golden form flickering and wobbling, 2) comic 'POP' effect with stars, 3) two kids flying apart with hilarious surprised expressions, 4) both landing with dizzy cartoon stars circling their heads. Funny and playful. Parchment background.

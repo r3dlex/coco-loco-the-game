@@ -1,0 +1,7 @@
+ID: roco_sprites
+Size: 768x512 → upscaled to 1792x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. Sprite sheet of Roco, a 3-year-old toddler superhero in teal cape. 8 evenly spaced frames in a horizontal row: 1) standing idle (wobbles), 2) toddling run frame 1, 3) toddling run frame 2, 4) jumping (flailing arms), 5) floating down gently, 6) crying sonic wave attack (teal rings), 7) bonked (silly face), 8) happy dance. Side view facing right. Peach skin, teal cape, star backpack. Parchment background.

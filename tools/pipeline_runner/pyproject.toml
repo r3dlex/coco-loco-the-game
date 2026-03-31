@@ -11,8 +11,17 @@ python = "^3.11"
 click = "^8.1"
 tomli = "^2.0"
 pyyaml = "^6.0"
-openai = "^1.0"
 cairosvg = "^2.7"
+
+[tool.poetry.group.dalle.dependencies]
+openai = "^1.0"
+
+[tool.poetry.group.flux.dependencies]
+diffusers = ">=0.30.0"
+transformers = "*"
+accelerate = "*"
+sentencepiece = "*"
+protobuf = "*"
 
 [tool.poetry.scripts]
 pipeline = "pipeline_runner.cli:main"

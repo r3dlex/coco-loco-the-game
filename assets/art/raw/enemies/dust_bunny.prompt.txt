@@ -1,0 +1,7 @@
+ID: dust_bunny
+Size: 768x512 → upscaled to 1792x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. Sprite sheet of a cute dust bunny enemy for a children's game. Round fluffy gray ball with big googly eyes and tiny stubby feet. 6 frames: 1) idle bounce, 2) patrol walk left, 3) patrol walk right, 4) wind-up puff (getting bigger), 5) charge attack, 6) defeated poof cloud dissipating with sparkles. Cute and silly, not scary at all. Parchment background. Brown outlines.

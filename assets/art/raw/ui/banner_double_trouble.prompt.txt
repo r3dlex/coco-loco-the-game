@@ -1,0 +1,7 @@
+ID: banner_double_trouble
+Size: 768x512 → upscaled to 1792x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. An explosive celebratory banner for a 'Double Trouble' fusion activation. A radiant golden silhouette of a fused superhero in the center. Radiating star burst with fireworks and sparkles all around. Orange and teal energy swirling into gold. Triumphant and exciting. Parchment background with ornate golden storybook border. No text. Landscape shape.

@@ -1,0 +1,7 @@
+ID: roco_reference
+Size: 512x512 → upscaled to 1024x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. Character reference sheet for Roco, a 3-year-old toddler superhero. Teal color scheme (#4ECDC4). Round chubby cheeks. Huge curious eyes. Wears a tiny teal cape and oversized boots. Star-shaped backpack. Peach skin (#FFD4A0). Smaller and rounder than his older brother. Show: front view, side view, back view, 3/4 view. Clean parchment background. Thick warm-brown outlines.

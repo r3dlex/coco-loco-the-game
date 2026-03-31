@@ -17,6 +17,9 @@ target
 lcov.info
 *.profraw
 
+# Secrets
+.env
+
 # Python
 __pycache__/
 *.pyc

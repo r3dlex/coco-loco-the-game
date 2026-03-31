@@ -1,0 +1,7 @@
+ID: bg_home_layer2_mid
+Size: 768x512 → upscaled to 1792x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. Seamless horizontal parallax background for a children's game. Mid distance: living room wall with framed family drawings (children's art), a wooden bookshelf with colorful book spines, a friendly cuckoo clock. Warm parchment tones. Upper-left lighting. Soft watercolor style. Must tile seamlessly left-to-right. Landscape 16:9.
