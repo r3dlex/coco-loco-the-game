@@ -3,6 +3,7 @@
     "loko_reference",
     "loko_sprites",
     "loko_dash",
+    "loko_fury",
     "roco_reference",
     "roco_sprites",
     "roco_cry",
@@ -22,7 +23,15 @@
     "effect_poof",
     "banner_player2",
     "banner_team_up",
-    "banner_double_trouble"
+    "banner_double_trouble",
+    "star_meter_empty",
+    "star_meter_filled",
+    "guide_trail",
+    "explosion_big",
+    "platform_block",
+    "platform_book",
+    "platform_cushion",
+    "ground_floor"
   ],
   "skipped": [],
   "failed": []

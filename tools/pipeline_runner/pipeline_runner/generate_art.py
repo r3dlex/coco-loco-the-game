@@ -100,6 +100,20 @@ PROMPTS = [
         "size": "1792x1024",
     },
     {
+        "id": "loko_fury",
+        "category": "characters",
+        "prompt": (
+            "Sprite sheet of Loko, 6-year-old boy superhero, in berserker rage mode. "
+            "4 frames: 1) powering up with red-orange aura glowing around him, "
+            "2) fury punch 1 with fist forward and energy trail, "
+            "3) fury punch 2 with other fist and screen-shake energy lines, "
+            "4) exhausted cooldown slumped over catching breath. "
+            "Red and orange glow around character. Side view facing right. "
+            "Parchment background. Thick brown outlines."
+        ),
+        "size": "1792x1024",
+    },
+    {
         "id": "roco_reference",
         "category": "characters",
         "prompt": (
@@ -358,6 +372,102 @@ PROMPTS = [
             "Orange and teal energy swirling into gold. Triumphant and exciting. "
             "Parchment background with ornate golden storybook border. "
             "No text. Landscape shape."
+        ),
+        "size": "1792x1024",
+    },
+
+    # ── Star Meter UI ─────────────────────────────────────────────────────
+    {
+        "id": "star_meter_empty",
+        "category": "ui",
+        "prompt": (
+            "A row of 5 star outlines for a children's game HUD. "
+            "Stars are faint, empty, with thin brown outlines on parchment. "
+            "Simple and clean. Each star is the same size in a horizontal row. "
+            "Warm cream background."
+        ),
+        "size": "1024x1024",
+    },
+    {
+        "id": "star_meter_filled",
+        "category": "ui",
+        "prompt": (
+            "A row of 5 bright golden filled stars for a children's game HUD. "
+            "Stars are glowing gold with sparkle highlights. Thick brown outlines. "
+            "Each star is the same size in a horizontal row. "
+            "Warm cream background."
+        ),
+        "size": "1024x1024",
+    },
+
+    # ── Guidance & Boss Defeat ────────────────────────────────────────────
+    {
+        "id": "guide_trail",
+        "category": "effects",
+        "prompt": (
+            "A gentle glowing trail of small golden arrows pointing right, "
+            "like breadcrumbs guiding a child forward in a game. "
+            "Soft sparkle particles around the arrows. Warm golden light. "
+            "Horizontal strip on transparent parchment background."
+        ),
+        "size": "1792x1024",
+    },
+    {
+        "id": "explosion_big",
+        "category": "effects",
+        "prompt": (
+            "A big celebratory cartoon explosion for defeating a boss in a children's game. "
+            "4 frames: 1) bright golden flash, 2) expanding ring of stars and confetti, "
+            "3) fireworks bursting with sparkles, 4) fading golden dust settling. "
+            "Joyful and triumphant, not violent. Warm golden and orange colors. "
+            "Parchment background."
+        ),
+        "size": "1024x1024",
+    },
+
+    # ── Platforms (Home Phase) ────────────────────────────────────────────
+    {
+        "id": "platform_block",
+        "category": "platforms",
+        "prompt": (
+            "A colorful wooden building block toy, viewed from the side, "
+            "for use as a platform in a children's side-scroller game. "
+            "Rectangular, warm brown wood with a painted letter 'A' on it. "
+            "Thick brown outlines. Parchment background. Simple and clear."
+        ),
+        "size": "1024x1024",
+    },
+    {
+        "id": "platform_book",
+        "category": "platforms",
+        "prompt": (
+            "A thick colorful children's picture book lying flat on its side, "
+            "for use as a platform in a side-scroller game. "
+            "Red and blue cover with gold spine. Viewed from the side. "
+            "Thick brown outlines. Parchment background."
+        ),
+        "size": "1024x1024",
+    },
+    {
+        "id": "platform_cushion",
+        "category": "platforms",
+        "prompt": (
+            "A soft cozy sofa cushion lying on a floor, viewed from the side, "
+            "for use as a bouncy platform in a children's side-scroller game. "
+            "Warm orange fabric with a simple pattern. Slightly puffy and round. "
+            "Thick brown outlines. Parchment background."
+        ),
+        "size": "1024x1024",
+    },
+    {
+        "id": "ground_floor",
+        "category": "platforms",
+        "prompt": (
+            "A seamless horizontal strip of warm wooden floor planks, "
+            "for use as the ground in a children's side-scroller game. "
+            "Warm honey-brown wood with subtle grain. Thick brown outlines. "
+            "Viewed from the side. Must tile seamlessly left-to-right. "
+            "Parchment background."
         ),
         "size": "1792x1024",
     },

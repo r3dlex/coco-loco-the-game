@@ -1,0 +1,7 @@
+ID: star_meter_empty
+Size: 512x512 → upscaled to 1024x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. A row of 5 star outlines for a children's game HUD. Stars are faint, empty, with thin brown outlines on parchment. Simple and clean. Each star is the same size in a horizontal row. Warm cream background.

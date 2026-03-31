@@ -1,0 +1,7 @@
+ID: loko_fury
+Size: 768x512 → upscaled to 1792x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. Sprite sheet of Loko, 6-year-old boy superhero, in berserker rage mode. 4 frames: 1) powering up with red-orange aura glowing around him, 2) fury punch 1 with fist forward and energy trail, 3) fury punch 2 with other fist and screen-shake energy lines, 4) exhausted cooldown slumped over catching breath. Red and orange glow around character. Side view facing right. Parchment background. Thick brown outlines.

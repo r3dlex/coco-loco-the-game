@@ -1,0 +1,7 @@
+ID: platform_block
+Size: 512x512 → upscaled to 1024x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. A colorful wooden building block toy, viewed from the side, for use as a platform in a children's side-scroller game. Rectangular, warm brown wood with a painted letter 'A' on it. Thick brown outlines. Parchment background. Simple and clear.

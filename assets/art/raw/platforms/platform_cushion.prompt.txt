@@ -1,0 +1,7 @@
+ID: platform_cushion
+Size: 512x512 → upscaled to 1024x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. A soft cozy sofa cushion lying on a floor, viewed from the side, for use as a bouncy platform in a children's side-scroller game. Warm orange fabric with a simple pattern. Slightly puffy and round. Thick brown outlines. Parchment background.

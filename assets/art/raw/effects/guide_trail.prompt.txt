@@ -1,0 +1,7 @@
+ID: guide_trail
+Size: 768x512 → upscaled to 1792x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. A gentle glowing trail of small golden arrows pointing right, like breadcrumbs guiding a child forward in a game. Soft sparkle particles around the arrows. Warm golden light. Horizontal strip on transparent parchment background.

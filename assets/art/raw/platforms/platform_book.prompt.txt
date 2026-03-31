@@ -1,0 +1,7 @@
+ID: platform_book
+Size: 512x512 → upscaled to 1024x1024
+Backend: sdxl-turbo
+Steps: 4
+
+Prompt:
+Children's storybook watercolor illustration, warm parchment background, thick brown outlines, gold star accents, no text. A thick colorful children's picture book lying flat on its side, for use as a platform in a side-scroller game. Red and blue cover with gold spine. Viewed from the side. Thick brown outlines. Parchment background.
