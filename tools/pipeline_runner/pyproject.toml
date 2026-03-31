@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pipeline-runner"
+version = "0.1.0"
+description = "Spec-driven validation and scaffolding pipelines for Coco Loco"
+authors = []
+package-mode = false
+packages = [{include = "pipeline_runner"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.1"
+tomli = "^2.0"
+pyyaml = "^6.0"
+
+[tool.poetry.scripts]
+pipeline = "pipeline_runner.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

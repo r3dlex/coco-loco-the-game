@@ -13,6 +13,18 @@ target
 # Contains mutation testing data
 **/mutants.out*/
 
+# Coverage
+lcov.info
+*.profraw
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Poetry
+tools/pipeline_runner/poetry.lock
+
 # RustRover
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
 #  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
