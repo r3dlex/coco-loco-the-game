@@ -11,9 +11,12 @@ python = "^3.11"
 click = "^8.1"
 tomli = "^2.0"
 pyyaml = "^6.0"
+openai = "^1.0"
+cairosvg = "^2.7"
 
 [tool.poetry.scripts]
 pipeline = "pipeline_runner.cli:main"
+generate-art = "pipeline_runner.generate_art:main"
 
 [build-system]
 requires = ["poetry-core"]
