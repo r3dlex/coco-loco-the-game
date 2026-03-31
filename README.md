@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logos/png/logo_640x360.png" alt="Coco Loco: The Game" width="480"/>
+  <img src="assets/logos/png/logo-640x360.png" alt="Coco Loco: The Game" width="480"/>
 </p>
 
 <h1 align="center">Coco Loco: The Game</h1>
