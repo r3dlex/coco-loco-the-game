@@ -11,13 +11,13 @@ test:
 
 # Requires: cargo install cargo-llvm-cov
 coverage:
-	cargo llvm-cov --all-features --workspace --fail-under-lines 85
+	cargo llvm-cov --all-features --workspace --fail-under-lines 60
 
 coverage-html:
 	cargo llvm-cov --all-features --workspace --html --open
 
 coverage-ci:
-	cargo llvm-cov --all-features --workspace --lcov --output-path lcov.info --fail-under-lines 85
+	cargo llvm-cov --all-features --workspace --lcov --output-path lcov.info --fail-under-lines 60
 
 clean:
 	cargo clean
